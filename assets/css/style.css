@@ -1,0 +1,245 @@
+/* ================ GOOGLE FONTS ================== */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+/* ================= VARIABLES CSS ================ */
+:root {
+    /* ================ COLORS ================ */
+    --first-hue: 260;
+    --second-hue: 216;
+    --first-color: hsl(var(--first-hue), 91%, 64%);
+    --first-color-dark: hsl(var(--first-hue), 62%, 20%);
+    --title-color: hsl(var(--second-hue), 8%, 85%);
+    --text-color: hsl(var(--second-hue), 8%, 75%);
+    --body-color: hsl(var(--second-hue), 28%, 15%);
+    --container-color: hsl(var(--second-hue));
+    --write-color: hsl(var(--second-hue), 8%, 100%);
+
+    --first-gradient: linear-gradient(
+        150deg,
+        var(--first-color) 0%,
+        var(--write-color) 100%
+    );
+        --second-gradient: linear-gradient(
+        260deg,
+        var(--first-color-dark) 0%,
+        var(--first-color) 100%
+    );
+
+    /* ================ FONT FAMILY ============== */
+
+    --body-font: "space Grotesk", sans-serif;
+    
+    /* =============== FONT SIZES ================= */
+    
+    --big-font-size: 8rem;
+    --h1-font-size: 3.75rem;
+    --h2-font-size: 3rem;
+    --h3-font-size: 1.5rem;
+    --larger-font-size: 1.25rem;
+    --large-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+
+    /* ================ FONT WEIGHT ================= */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+}
+
+/*  RESPONSIVE TYPOGRAHY  */
+
+/* =============== BASE =============== */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body,
+    button,
+    input,
+    textarea {
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+    }
+
+    body {
+        background-color: var(--body-color);
+        color: var(--text-color);
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: var(--text-color);
+        font-weight: var(--font-bold);
+        line-height: 1.2;
+    }
+
+    p {
+        line-height: 1.75;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea {
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ============ REUSABLE CSS CLASSES ================= */
+    .section {
+        padding-block: 6rem;
+    }
+
+    .button {
+        display: inline-flex;
+        background: var(--second-gradient);
+        color: var(--write-color);
+        padding: 1.25rem 2rem;
+        border-radius: .5rem;
+        font-weight: var(--font-semi-bold);
+        transition: bacground 0.3s;
+    }
+
+    .button:hover {
+        background: linear-gradient(
+            260deg,
+            var(--first-color) 0%,
+            var(--first-color-dark) 100%
+        );
+    }
+
+    /* ==================== LAYOUT ========================= */
+    .container {
+        max-width: 1320px;
+        margin-inline: auto;
+        padding-inline: 1.25rem;
+    }
+
+    .grid {
+        display: grid;
+    }
+    /* ==================== HEADER & NAV ===================== */
+    .header {
+        background-color: transparent;
+        position: fixed;
+        inset: 0 0 auto;
+        z-index: 1000;
+    }
+
+    .nav,
+    .nav-list,
+    .nav-btns {
+        display: flex;
+    }
+
+    .nav {
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 3rem;
+        height: 4.5rem;
+    }
+
+    .nav-logo,
+    .nav-link,
+    .change-theme {
+        color: var(--title-color);
+    }
+
+    .nav-logo {
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-bold);
+    }
+
+    .nav-menu {
+        margin-left: auto;
+    }
+
+    .nav-list {
+        column-gap: 2.75rem;
+    }
+
+    .nav-link {
+        font-weight: var(--font-medium);
+        transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+        color: var(--first-color);
+    }
+
+    .change-theme {
+        font-size: 1.25rem;
+    }
+
+    .nav-btns {
+        align-items: center;
+        column-gap: 1rem;
+    }
+
+    .nav-close,
+    .nav-toggle {
+        display: none;
+    }
+
+
+
+
+
+
+    /* ================= HOME ================= */
+    .home-container {
+        grid-template-columns: 1fr repeat(2, max-content);
+        align-items: center;
+        column-gap: 3rem;
+        padding-top: 6rem;
+    }
+
+    .home-title {
+        font-size: var(--big-font-size);
+        line-height: 1;
+        margin-bottom: 2rem;
+    }
+
+    .home-job {
+        font-size: var(--h2-font-size);
+        font-weight: var(--font-semi-bold);
+    }
+
+    .home-description{
+        font-size: var(--larger-font-size);
+        margin-block: 1.5rem 2rem;
+    }
+
+    .home-img-wrapper {
+        width: 38rem;
+        /* position: relative;
+        bottom: 200px;
+        left: 60px; */
+    }
