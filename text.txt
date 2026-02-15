@@ -1,0 +1,206 @@
+========== NAVBAR ==========
+.nav-logo
+Zethan 
+
+.nav-name
+Home 
+About
+Services
+Skills
+Portfolio
+Contact
+
+
+========== HOME ==========
+.home-title
+Zethan West
+
+.home-job
+I am a Web Developer
+
+.home-description
+A passionate web developer based in the state of California. With a keen eye for detail and a passion for web design, I specialize in creating visually captivating and highly functional websites.
+
+.button
+My Works
+
+.home-socials-links
+https://www.linkedin.com/
+https://instagram.com/
+https://github.com/
+
+
+========== ABOUT ==========
+.about-no
+10
+
+.about-title
+Years Expercience
+
+.about-description
+Over ten years of designing, I transform concepts projects using creativity and interactive design worldwide.
+
+.button
+Download CV
+
+.about-item-no | .about-details
+14
+Award winner
+
+1.2k
+Worldwide client
+
+2.2k
+Job done successfully
+
+
+========== SERVICES ==========
+.section-title
+My Services
+
+.services-no | .services-title | .services-description
+01
+Responsive Design
+Ensure your website looks great on any device, with layouts that adapt to different screen sizes seamlessly.
+
+02
+CMS Development
+Set up user-friendly CMS solutions like WordPress or custom-built options so clients can manage content easily.
+
+03
+API Integrations
+Build and integrate APIs to connect websites with third-party applications, enhancing functionality.
+
+
+========== SKILLS ==========
+.section-title
+My Skills
+
+.skills-title
+Frontend Developer
+Web Designer
+
+.skills-name | .skills-level
+HTML
+Intermediate
+
+CSS
+Advanced
+
+JavaScript
+Intermediate
+
+React
+Basic
+
+Tailwind
+Intermediate
+
+Figma
+Advanced
+
+Sketch
+Basic
+
+Adobe XD
+Intermediate
+
+Photoshop
+Intermediate
+
+InvisionApp
+Basic
+
+
+========== RESUME ==========
+.section-title
+My Journey
+
+.resume-title | .resume-duration | .resume-title | .resume-description
+Apple
+Jan 2023 - May 2024
+UX / UI Designer
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+Facebook
+June 2020 - Jan 2023
+UX / UI Designer
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+University
+March 2018 - March 2019
+Multimedia & Creative Technology
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+University
+April 2014 - Dec 2017
+Multimedia & Creative Technology
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+========== PORTFOLIO ==========
+.section-title
+Portfolio
+
+.work-item
+All
+Photography
+Development
+Branding
+
+.work-description
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+
+.work-category | .work-title
+Branding
+Zorro
+
+Development
+Explore
+
+Photography
+Mozar
+
+Photography
+Gooir
+
+Development
+Stay Fit
+
+.work-link
+Visit Project
+
+
+========== CONTACT ==========
+.section-title
+Let's Talk About Your Project
+
+.contact-title | .contact-description
+E-mail
+hello@domain.com
+
+Phone
++123 445 566
+
+Location
+123 Main Street New York, 10001
+
+.contact-form-label
+Name
+Email
+Message
+
+.button
+Send Message
+
+* EMAIL JS *
+Write all the input fields
+
+Message sent ✔
+OOPs! SOMETHING WENT WRONG...
+
+
+========== FOOTER ==========
+.footer-copyright
+© 2024 Zethan. All Rights Reserved
+Developed by Sajid

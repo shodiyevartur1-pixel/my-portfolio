@@ -244,7 +244,7 @@
     }
 
     .home-img-wrapper {
-        width: 38rem;
+        width: 34rem;
         background: var(--second-gradient);
         border-radius: 51% 49% 77% 23% / 65% 50% 50% 35%;
         overflow: hidden;
@@ -351,4 +351,292 @@
 
     .services-description {
         font-size: var(--large-font-size);
+    }
+
+    .services-card:hover :is(.services-no, .services-title, .services-description) {
+        color: var(--write-color);
+    }
+
+    /* ================ SKILLS ================= */
+
+    .skills-container {
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    .skills-title {
+        text-align: center;
+        font-size: var(--h3-font-size);
+        margin-bottom: 3rem;
+    }
+
+    .skills-items {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+
+    .skills-data {
+        text-align: center;
+    }
+
+    .skills-blob {
+        width: 90px;
+        height: 110px;
+        background-color: var(--container-color);
+        border-radius: 3rem;
+        display: grid;
+        place-items: center;
+        margin-inline: auto;
+    }
+    
+    .skills-img {
+        width: 40px;
+    }
+
+    .skills-name {
+        font-size: var(--large-font-size);
+        margin-block: 1rem 0.25rem;
+    }
+
+    .skills-level {
+        font-size: var(--small-font-size);
+    }
+
+    /* ================ resume ================= */
+
+    .resume-container {
+        grid-template-columns: 0.7fr;
+        justify-content: center;
+        row-gap: 3rem;
+    }
+
+    .resume-item {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+    }
+
+    .resume-right {
+        order: 2;
+    }
+
+    .resume-left {
+        text-align: right;
+    }
+
+    .resume-icon {
+        color: var(--title-color);
+        font-size: 2.75rem;
+    }
+
+    .resume-title {
+        font-size: var(--larger-font-size);
+        margin-block: 0.75rem;
+    }
+
+    .resume-duration {
+        font-size: var(--small-font-size);
+    }
+
+    .resume-container,
+    .resume-item {
+        position: relative;
+    }
+
+    .resume-container::after,
+    .resume-item::after {
+        content: '';
+        position: absolute;
+        top: 0.75rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--title-color);
+    }
+
+    .resume-container::after {
+        width: 2px;
+        height: 100%;
+    }
+
+    .resume-item::after {
+        width: 16px;
+        height: 4px;
+    }
+
+    /* ================ Portfolio ================== */
+    .work-list {
+        display: flex;
+        justify-content: center;
+        column-gap: 2.5rem;
+        margin-bottom: 3.5rem;
+    }
+    
+    .work-item {
+        color: var(--title-color);
+        font-weight: var(--font-semi-bold);
+        cursor: pointer;
+        position: relative;
+        padding-bottom: 0.5rem;
+        transition: color 0.3s;
+    }
+    
+    .work-item:hover,
+    .active-work {
+        color: var(--first-color);
+    }
+
+    .work-item::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--first-color);
+        transition: width 0.3s;
+    }
+
+    .active-work::before {
+        width: 60%;
+    }
+
+    .work-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.75rem;
+    }
+
+    .work-card {
+        background-color: var(--container-color);
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+    .work-img {
+        height: 240px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+        margin-bottom: 1.5rem;
+    }
+
+    .work-category {
+        color: var(--first-color);
+        font-size: var(--small-font-size);
+        font-weight: var(--font-medium);
+    }
+
+    .work-title {
+        font-size: var(--h3-font-size);
+        margin-block: 0.54rem 1.75rem;
+    }
+    
+    .work-description {
+        min-height: 125px;
+    }
+
+    .work-link {
+        display: inline-flex;
+        align-items: center;
+        column-gap: 0.75rem;
+        color: var(--title-color);
+        font-weight: var(--font-semi-bold);
+    }
+
+    .work-icon {
+        color: var(--first-color);
+        font-size: 1.25rem;
+        transition: transform 0.3s;
+    }
+
+    .work-link:hover .work-icon{
+        transform: translateX(0.3);
+    }
+
+    /* =================== CONTACT ==================== */
+    .contact {
+        padding-bottom: 8rem;
+    }
+
+    .contact-container {
+        grid-template-columns: 5.5fr 6.5fr;
+        column-gap: 2rem;
+    }
+
+    .contact-data {
+        row-gap: 2rem;
+    }
+
+    .contact-section-title {
+        text-align: left;
+    }
+
+    .contact-item {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        align-items: center;
+        column-gap: 1.5rem;
+    }
+
+    .contact-icon {
+        width: 68px;
+        aspect-ratio: 1/1;
+        background: var(--second-gradient);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: var(--write-color);
+        font-size: 2rem;
+    }
+
+    .contact-title {
+        font-size: var(--larger-font-size);
+        margin-bottom: 0.25rem;
+    }
+
+    .contact-form {
+        row-gap: 3rem;
+        margin-top: 1rem;
+        position: relative;
+    }
+
+    .contact-form-div {
+        display: grid;
+        row-gap: 0.75rem;
+    }
+
+    .contact-label {
+        color: var(--title-color);
+        font-size: var(--large-font-size);
+        font-weight: var(--font-semi-bold);
+    }
+
+    .contact-input {
+        color: var(--title-color);
+        border-bottom: 3px solid var(--title-color);
+        padding-inline: 0.25rem;
+        height: 50px;
+    }
+
+    .contact-area {
+        resize: none;
+        height: 200px;
+    }
+
+    .contact-button {
+        justify-content: start;
+        margin-top: 1rem;
+    }
+
+    .contact-button {
+        width: fit-content !important;
+        display: inline-block !important;
+    }
+
+    .contact-message {
+        position: absolute;
+        bottom: 5.5rem;
+        left: 0;
+        color: var(--title-color);
+        font-size: var(--small-font-size);
+        font-weight: var(--font-medium);
     }
