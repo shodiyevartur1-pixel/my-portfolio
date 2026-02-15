@@ -10,8 +10,8 @@
     --first-color-dark: hsl(var(--first-hue), 62%, 20%);
     --title-color: hsl(var(--second-hue), 8%, 85%);
     --text-color: hsl(var(--second-hue), 8%, 75%);
-    --body-color: hsl(var(--second-hue), 28%, 15%);
-    --container-color: hsl(var(--second-hue));
+    --body-color: hsl(var(--second-hue), 28%, 12%);
+    --container-color: hsl(var(--second-hue) 28%, 15%);
     --write-color: hsl(var(--second-hue), 8%, 100%);
 
     --first-gradient: linear-gradient(
@@ -133,6 +133,12 @@
             var(--first-color) 0%,
             var(--first-color-dark) 100%
         );
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: var(--h1-font-size);
+        margin-bottom: 4.25rem;
     }
 
     /* ==================== LAYOUT ========================= */
@@ -312,4 +318,37 @@
     .about-item-no { 
         font-size: var(--h2-font-size); 
         margin-bottom: 0.125rem;
+    }
+
+    /* =================== Services ========================= */
+
+    .services-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.75rem;
+    }
+
+    .services-card {
+        background: var(--container-color);
+        padding: 2rem;
+        border-radius: 1rem;
+        transition: background 0.3s;
+    }
+
+    .services-card:hover {
+        background: var(--second-gradient);
+    }
+
+    .services-no {
+        color: var(--title-color);
+        font-size: var(--h1-font-size);
+        font-weight: var(--font-bold);
+    }
+
+    .services-title {
+        font-size: var(--h3-font-size);
+        margin-block: 1.25rem 0.75rem;
+    }
+
+    .services-description {
+        font-size: var(--large-font-size);
     }
