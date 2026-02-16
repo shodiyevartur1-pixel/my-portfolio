@@ -70,7 +70,12 @@ window.addEventListener('DOMContentLoaded', () => {
       toggleBtn.classList.add('ri-sun-line');        // Quyosh belgisini qo'yish
       toggleBtn.classList.remove('ri-moon-line');     // Oyni olib tashlash
     }
+
+    localStorage.setItem('theme', theme)
   }
+
+  const savedTheme = localStorage.getItem('theme')  || 'dark';
+  applyTheme(savedTheme);
 
   toggleBtn.addEventListener('click', () => {
     const isLight = document.body.classList.contains('light-theme');
@@ -145,6 +150,20 @@ const sendEmail = (e) => {
 contactForm.addEventListener('submit', sendEmail);
 
 
+// ===================== SCROLL REVEAL ================= //
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+});
+
+sr.reveal(`.home-data`);
+sr.reveal(`.home-img-wrapper`, { delay: 500 });
+sr.reveal(`.home-social`, { delay: 600 });
+sr.reveal(`.services-card, .work-card`, { interval: 100 });
+sr.reveal(`.skills-developer, .resume-left, .contact-group`, { origin: 'left' });
+sr.reveal(`.skills-desinger, .resume-right, .contact-form`, { origin: 'right' });
 
 // ===================== MIXITUP ==================== //
 var mixer = mixitup('.work-container', {

@@ -104,7 +104,29 @@
         max-width: 100%;
     }
 
+    /* ============= Variables Dark Theme ============== */
+    .light-theme {
+        --title-color: hsl(var(--second-hue), 8%, 16%);
+        --text-color: hsl(var(--second-hue), 8%, 28%);
+        --body-color: hsl(var(--second-hue), 8%, 99%);
+        --container-color: hsl(var(--second-hue) 8%, 95%);
 
+        --first-gradient: linear-gradient(
+        150deg,
+        var(--first-color-dark) 0%,
+        var(--first-color) 100%
+    );
+    }
+
+    .light-theme .scroll-header {
+        box-shadow: 0 4px 4px hsla(var(--first-hue), 0%, 4%, 0.1);
+    }
+    
+    .light-theme .text-gradient {
+        -webkit-text-fill-color: hsla(var(--second-hue), 92%, 15%, 0.2);
+    }
+
+    /* ============= Active Link ============= */
     .active-link {
         color: var(--first-color) !important;
     }
@@ -249,7 +271,7 @@
     }
 
     .home-img-wrapper {
-        width: 34rem;
+        width: 35rem;
         background: var(--second-gradient);
         border-radius: 51% 49% 77% 23% / 65% 50% 50% 35%;
         overflow: hidden;
