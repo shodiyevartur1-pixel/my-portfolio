@@ -13,6 +13,18 @@ gsap.utils.toArray(".text-gradient").forEach((span) => {
   });
 });
 
+// ===================== change background header ======================== //
+const scrollHeader = () => {
+  const header = document.getElementById('header');
+  if (!header) return;
+
+  window.scrollY >= 20
+    ? header.classList.add('scroll-header')
+    : header.classList.remove('scroll-header');
+};
+
+window.addEventListener("scroll", scrollHeader);
+
 // =============== aktive ================ //
 const linkWork = document.querySelectorAll('.work-item');
 

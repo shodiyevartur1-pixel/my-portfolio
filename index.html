@@ -15,34 +15,34 @@
 </head>
 <body>
     <!-- ==================== HEADER ======================= -->
-     <header class="header">
+     <header id="header">
         <nav class="nav container">
             <a href="#" class="nav-logo">Artur</a>
 
             <div class="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#" class="nav-link active-link">Home</a>
+                        <a href="#home" class="nav-link active-link">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Services</a>
+                        <a href="#services" class="nav-link">Services</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Skills</a>
+                        <a href="#skills" class="nav-link">Skills</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Portfolio</a>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
 
@@ -61,7 +61,7 @@
      <!-- =================== MAIN ==================== -->
       <main class="main">
         <!-- ================ HOME ================== -->
-         <SECTION class="home section">
+         <SECTION class="home section" id="home">
             <div class="home-container container grid">
                 <div class="home-data">
                     <h1 class="home-title">Artur Shodiev</h1>
@@ -97,7 +97,7 @@
             </div>
          </SECTION>
         <!-- ================ ABOUT ================= -->
-         <section class="about section">
+         <section class="about section" id="about">
             <div class="about-container container grid">
                 <div class="about-experience">
                     <span class="about-no"><count-up>10</count-up></span>
@@ -139,7 +139,7 @@
             </div>
          </section>
         <!-- ================ SERVICES ================= -->
-         <section class="services section">
+         <section class="services section" id="services">
             <h2 class="section-title">My Services</h2>
 
             <div class="services-container container grid">
@@ -169,7 +169,7 @@
             </div>
          </section>
         <!-- ================ SKILLS ================== -->
-         <section class="skills section">
+         <section class="skills section" id="skills">
             <h2 class="section-title">My Skills</h2>
 
             <div class="skills-container container grid">
@@ -277,7 +277,7 @@
             </div>
          </section>
         <!-- ================ RESUME ================== -->
-         <section class="resume section">
+         <section class="resume section" id="resume">
             <h2 class="section-title">My Journey</h2>
 
             <div class="resume-container container grid">
@@ -339,7 +339,7 @@
             </div>
          </section>
         <!-- ================ PORTFOLIO ================ -->
-         <section class="work section">
+         <section class="work section" id="portfolio">
             <h2 class="section-title">Portfolio</h2>
 
             <div class="container">
@@ -444,7 +444,7 @@
             </div>
          </section>
         <!-- ================ CONTACT ================== -->
-          <section class="contact section">
+          <section class="contact section" id="contact">
             <div class="contact-container container grid">
                 <div class="contact-group">
                     <h2 class="section-title contact-section-title">
@@ -508,9 +508,30 @@
                         <p class="contact-message" id="message"></p>
                     </form>
             </div>
-        </section>
-        
+        </section>         
       </main>
+        <!-- ================ FOOTER =================== -->
+        <footer class="footer">
+            <div class="footer-container container">
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/" target="_blank" class="footer-link">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="https://www.github.com/" target="_blank" class="footer-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">© 2024 <span>Artur</span>. All Rights Reserved</p>
+
+                <p class="footer-copyright">Developed by Artur</p>
+            </div>
+        </footer>
     <!-- ================== GSAP ==================== -->
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
 
