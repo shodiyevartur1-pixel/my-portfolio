@@ -12,6 +12,35 @@ gsap.utils.toArray(".text-gradient").forEach((span) => {
     }
   });
 });
+// ===================== Remove menu mobile ============== /
+const navLink = document.querySelectorAll('.nav-link');
+
+const linkAction = () => {
+  const header = document.getElementById('nav-menu');
+
+  navMenu.classList.remove('shov-menu');
+};
+
+navLink.forEach((n) => n.addEventListener('click', linkAction))
+
+// ===================== menu show =================== //
+  const navMenu = document.getElementById('nav-menu'),
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close');
+
+// *==================== MENU SHOW ===================* //
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.add('show-menu')
+  });
+}
+
+// *==================== MENU HIDDEN ===================* //
+if (navClose) {
+  navClose.addEventListener('click', () => {
+    navMenu.classList.remove('show-menu')
+  });
+}
 
 // ===================== change background header ======================== //
 const scrollHeader = () => {
@@ -161,7 +190,7 @@ const sr = ScrollReveal({
 sr.reveal(`.home-data`);
 sr.reveal(`.home-img-wrapper`, { delay: 500 });
 sr.reveal(`.home-social`, { delay: 600 });
-sr.reveal(`.services-card, .work-card`, { interval: 100 });
+sr.reveal(`.services-card, .mix`, { interval: 100 });
 sr.reveal(`.skills-developer, .resume-left, .contact-group`, { origin: 'left' });
 sr.reveal(`.skills-desinger, .resume-right, .contact-form`, { origin: 'right' });
 

@@ -47,6 +47,18 @@
 }
 
 /*  RESPONSIVE TYPOGRAHY  */
+    @media screen and (max-width: 1208px) {
+        :root {
+            --big-font-size: 6.25rem;
+            --h1-font-size: 2.75rem;
+            --h2-font-size: 2rem;
+            --h3-font-size: 1.25rem;
+            --larger-font-size: 1.125rem;
+            --large-font-size: 1rem;
+            --normal-font-size: 0.938rem;
+            --small-font-size: 0.813rem;
+        }
+    }
 
 /* =============== BASE =============== */
     * {
@@ -120,6 +132,10 @@
 
     .light-theme .scroll-header {
         box-shadow: 0 4px 4px hsla(var(--first-hue), 0%, 4%, 0.1);
+    }
+
+    .light-theme .nav-menu {
+        background-color: hsla(var(--first-hue), 0%, 96%, 0.4);
     }
     
     .light-theme .text-gradient {
@@ -245,7 +261,10 @@
         background: var(--body-color) !important;
         box-shadow: 0 4px 4px hsla(var(--first-hue), 0%, 4%, 0.2);
     }
-    
+    /* ================= MAIN ================= */
+        .main {
+            overflow: hidden;
+        }
     /* ================= HOME ================= */
     .home-container {
         grid-template-columns: 1fr repeat(2, max-content);
@@ -271,7 +290,7 @@
     }
 
     .home-img-wrapper {
-        width: 35rem;
+        width: clamp(14rem, 5.3402rem + 39.5876vw, 38rem);
         background: var(--second-gradient);
         border-radius: 51% 49% 77% 23% / 65% 50% 50% 35%;
         overflow: hidden;
@@ -493,8 +512,9 @@
     /* ================ Portfolio ================== */
     .work-list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        column-gap: 2.5rem;
+        gap: 0.75rem 2.5rem;
         margin-bottom: 3.5rem;
     }
     
@@ -702,4 +722,242 @@
 
     .footer-copyright span {
         color: var(--first-color)
+    }
+
+    /* for large devices */
+    @media screen and (max-width: 1208px) {
+        .home-social-link {
+            font-size: var(--large-font-size);
+        }
+
+        .about-container {
+            column-gap: 3rem;
+        }
+
+        .about-experience {
+            width: 260px;
+            height: 400px;
+        }
+
+        .about-no {
+            font-size: 6.5rem;
+        }
+
+        .services-container, 
+        .work-container{
+            gap: 1.5rem;
+        }
+
+        .skills-container {
+            column-gap: 6rem;
+        }
+
+        .skills-items {
+            gap: 2.75rem 3rem;
+        }
+        
+        .resume-container {
+            grid-template-columns: .8fr;
+        }
+
+        .contact-icon {
+            width: 58px;
+            font-size: 1.75rem;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .nav {
+            height: 3.75rem;
+        }
+
+        .nav-toggle,
+        .nav-close {
+            display: inline-flex;
+            color: var(--title-color);
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
+
+        .nav-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            background-color: hsla(var(--first-hue), 0%, 4%, 0.4);
+            width: 55%;
+            height: 100%;
+            padding: 5rem 0 0 3rem;
+            backdrop-filter: blur(24px);
+        }
+
+        .show-menu {
+            right: 0;
+        }
+
+        .nav-list {
+            flex-direction: column;
+            row-gap: 3rem;
+        }
+
+        .nav-close {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+        }
+
+            .section {
+            padding-block: 5rem 2rem;
+        }
+
+        .home-container {
+            grid-template-columns: max-content 1fr;
+            gap: 2rem 4rem;
+            padding-top: 2rem;
+        }
+
+        .home-img-wrapper {
+            order: 2;
+        }
+
+        .home-data {
+            order: 3;
+            grid-column: 1/3;
+        }
+
+        .home-title {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .home-job {
+            font-size: 1.75rem;
+        }
+
+        .home-description {
+            font-size: var(--large-font-size);
+        }
+
+        .about-container,
+        .resume-container {
+            grid-template-columns: 1fr;
+            row-gap: 2rem;
+        }
+
+        .services-container,
+        .work-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .skills-container {
+            grid-template-columns: initial;
+            row-gap: 3.5rem;
+        }
+
+        .skills-items {
+            row-gap: 2.5rem;
+        }
+
+        .resume-icon {
+            column-gap: 3rem;
+        }
+
+        .contact {
+            padding-bottom: 5rem;
+        }
+
+        .contact-container {
+            grid-template-columns: 620px;
+            justify-content: center;
+            row-gap: 2rem;
+        }
+
+        .contact-section-title {
+            text-align: center;
+        }
+
+        .contact-form {
+            margin-top: 0;
+        }
+
+        .footer-container {
+            flex-direction: column;
+            row-gap: 0.75rem;
+        }
+}
+
+/* For medium devices */
+
+    @media screen and (max-width: 768px) {
+        .nav-menu {
+            width: 75%;
+        }
+
+        .home-container {
+            column-gap: 3rem;
+        }
+
+        .section-title {
+            margin-bottom: 3.5rem;
+        }
+
+        .services-container,
+        .work-container {
+            grid-template-columns: 405px;
+            justify-content: center;
+        }
+
+        .skills-blob {
+            width: 80px;
+            height: 100px;
+        }
+
+        .resume-container::after,
+        .resume-item::after {
+            all: unset;
+        }
+
+        .resume-item,
+        .contact-container {
+            grid-template-columns: 1fr;
+        }
+
+        .resume-item {
+            row-gap: 0.25rem;
+        }
+        
+        .resume-right {
+            order: initial;
+        }
+
+        .resume-left {
+            text-align: left;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .home-container {
+            column-gap: 1.75rem;
+        }
+    }
+
+/* for small devices */
+
+    @media screen and (max-width: 460px) {
+        .container {
+            padding-inline: 1rem;
+        }
+
+        .services-container,
+        .work-container {
+            grid-template-columns: 1fr;
+        }
+
+        .services-card,
+        .work-card {
+            padding: 1.75rem;
+        }
+
+        .skills-items {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
