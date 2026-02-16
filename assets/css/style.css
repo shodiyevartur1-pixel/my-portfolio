@@ -110,13 +110,6 @@
     }
 
 
-
-
-
-
-
-
-
     /* ============ REUSABLE CSS CLASSES ================= */
     .section {
         padding-block: 6rem;
@@ -207,6 +200,7 @@
 
     .change-theme {
         font-size: 1.25rem;
+        cursor: pointer;
     }
 
     .nav-btns {
