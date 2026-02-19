@@ -66,7 +66,7 @@ const scrollActive = () => {
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight,
               // Nav balandligi 4.5rem bo'lgani uchun 72-80 atrofida chegara qo'yamiz
-              sectionTop = current.offsetTop - 100, 
+              sectionTop = current.offsetTop - 120, 
               sectionId = current.getAttribute('id'),
               /* Sizda klass .nav-link, shuning uchun selektorni 
                  aynan shu klassga qarab qidiramiz
